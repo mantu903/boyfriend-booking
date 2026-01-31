@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Romantic Virtual Companion Service</title>
+<meta name="description" content="Book your Romantic Virtual Companion online for chat, call & emotional support. Safe, private & 18+ only.">
+<meta name="keywords" content="Romantic Companion, Virtual Date, Chat Online, Emotional Support, 18+ Entertainment">
+<meta name="author" content="Rabi Debnath">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Romantic Virtual Companion Service">
+<meta property="og:description" content="Book your Romantic Virtual Companion online for chat, call & emotional support. Safe, private & 18+ only.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourusername.github.io/your-repo/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root{
+--pink:#ff2f92;
+--rose:#ff6fae;
+--purple:#a445b2;
+--text:#4a0d2c;
+}
+body{
+margin:0;
+font-family:Arial;
+background:#fff0f6;
+color:var(--text);
+}
+header{
+min-height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#fff;
+background:
+linear-gradient(rgba(255,47,146,.7),rgba(164,69,178,.7)),
+url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e') center/cover no-repeat;
+}
+header h1{font-size:46px}
+button{
+background:linear-gradient(135deg,var(--pink),var(--rose));
+border:none;color:#fff;
+padding:15px 28px;
+font-size:18px;
+border-radius:40px;
+cursor:pointer;
+}
+section{max-width:1100px;margin:auto;padding:30px}
+.card{
+background:#fff;
+border-radius:20px;
+padding:25px;
+margin-bottom:30px;
+box-shadow:0 15px 30px rgba(255,47,146,.25);
+}
+input,select{
+width:100%;
+padding:14px;
+margin:8px 0;
+border-radius:14px;
+border:1px solid #ffb6d9;
+}
+footer{
+background:linear-gradient(135deg,var(--pink),var(--purple));
+color:#fff;text-align:center;padding:30px;
+}
+.profile-card{
+text-align:center;
+margin-bottom:20px;
+padding:15px;
+border:1px solid #ffb6d9;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(255,47,146,.2);
+}
+.profile-card img{
+width:100%;
+border-radius:15px;
+}
+.profile-card button{
+margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div>
+<h1>💖 Romantic Virtual Companion</h1>
+<p>Care • Respect • Comfort<br>Safe & Private (18+ Only)</p>
+<button onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})">
+Book Your Session 💕
+</button>
+</div>
+</header>
+
+<section>
+
+<!-- Services Info -->
+<div class="card">
+<h2>💝 What Service You Will Get</h2>
+<ul style="line-height:2;font-size:17px">
+<li>💬 Romantic & Friendly Chat</li>
+<li>📞 Supportive Voice Conversation</li>
+<li>❤️ Emotional Comfort Session</li>
+<li>🌙 Late Night Talk</li>
+</ul>
+<p><b>⏱ Duration:</b> 30 minutes</p>
+<p><b>🛡 Privacy:</b> 100% confidential</p>
+</div>
+
+<div class="card">
+<h2>⚙ How It Works</h2>
+<ol style="font-size:17px;line-height:2">
+<li>Choose your companion</li>
+<li>Choose your service type</li>
+<li>Select date & time</li>
+<li>Confirm booking → WhatsApp confirmation</li>
+</ol>
+</div>
+
+<!-- Boyfriend Profiles -->
+<div class="card" id="profiles">
+<h2>💑 Choose Your Companion</h2>
+
+<div class="profile-card">
+<img src="https://i.imgur.com/8Km9tLL.jpg" alt="Rahul">
+<h3>Rahul (25)</h3>
+<p>Romantic | Caring | Late Night Talk</p>
+<button onclick="selectBoy('Rahul')">Select & Book 💖</button>
+</div>
+
+<div class="profile-card">
+<img src="https://i.imgur.com/WxNkKzj.jpg" alt="Amit">
+<h3>Amit (27)</h3>
+<p>Friendly | Supportive | Emotional Comfort</p>
+<button onclick="selectBoy('Amit')">Select & Book 💖</button>
+</div>
+
+<div class="profile-card">
+<img src="https://i.imgur.com/3GvwNBf.jpg" alt="Sanjay">
+<h3>Sanjay (24)</h3>
+<p>Late Night Talk | Romantic | Chat Lover</p>
+<button onclick="selectBoy('Sanjay')">Select & Book 💖</button>
+</div>
+
+<input type="hidden" id="boyfriend">
+</div>
+
+<!-- Booking Form -->
+<div class="card" id="book">
+<h2>📅 Book Your Slot</h2>
+
+<form id="bookingForm">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<input id="email" placeholder="Email" required>
+
+<select id="service">
+<option>Romantic Chat</option>
+<option>Friendly Talk</option>
+<option>Emotional Support</option>
+<option>Late Night Conversation</option>
+</select>
+
+<select id="plan">
+<option value="₹199">Chat – ₹199</option>
+<option value="₹499">Call / Virtual Date – ₹499</option>
+</select>
+
+<input type="date" id="date" required>
+<input type="time" id="time" required>
+
+<button type="submit">Confirm Booking 💖</button>
+</form>
+</div>
+
+<div class="card">
+<h2>📜 Legal Notice</h2>
+<p>
+This service is for virtual entertainment only.  
+ physical  meeting.  adult content.  
+No emotional dependency. 18+ users only.
+</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Romantic Virtual Companion</p>
+<p>WhatsApp Support Available</p>
+</footer>
+
+<script>
+// Boyfriend Selection + Auto Scroll
+function selectBoy(name){
+  document.getElementById("boyfriend").value = name;
+  alert(name + " selected 💕");
+  document.getElementById('book').scrollIntoView({behavior:'smooth'});
+  service.value = "Romantic Chat";
+}
+
+// Booking Form Submission
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const data = {
+    name: name.value,
+    phone: phone.value,
+    email: email.value,
+    boyfriend: document.getElementById("boyfriend").value || "Not selected",
+    service: service.value,
+    plan: plan.value,
+    date: date.value,
+    time: time.value
+  };
+
+  if(data.boyfriend === "Not selected"){
+    alert("Please select a companion first 💖");
+    return;
+  }
+
+  var msg =
+    "💖 New Booking 💖%0A"+
+    "Name: "+data.name+"%0A"+
+    "Phone: "+data.phone+"%0A"+
+    "Email: "+data.email+"%0A"+
+    "Companion: "+data.boyfriend+"%0A"+
+    "Service: "+data.service+"%0A"+
+    "Plan: "+data.plan+"%0A"+
+    "Date: "+data.date+"%0A"+
+    "Time: "+data.time;
+
+  window.open(
+    "https://wa.me/6297882077?text="+encodeURIComponent(msg),
+    "_blank"
+  );
+
+  alert("Booking request sent successfully 💕");
+});
+</script>
+
+</body>
+</html>
